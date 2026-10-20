@@ -1,64 +1,52 @@
-# Impostor Game Android
+# Impostor Game (Android)
 
-Desenvolvido por [luizgustavolab](https://github.com/luizgustavolab)
+Offline social deduction word game for groups, built with React Native and Expo. Players receive a secret word, except the impostor, and the group has to find the impostor before they discover the word.
 
-Um jogo de dedução social moderno, em Português, construído com React Native e Expo, focado em jogabilidade dinâmica e interface intuitiva. O objetivo é identificar o impostor antes que ele descubra a palavra secreta do grupo.
+**Download (Android beta):** [APK](https://expo.dev/artifacts/eas/tRBggDfp26t44Vu2Vfu5DF.apk)
 
-## 🚀 Funcionalidades
+> The APK is distributed outside the Play Store, so Android may show an "unknown source" warning before installing.
 
-* **Modo Cego (Dica para Impostor):** Opção selecionável para ocultar a palavra-chave do impostor, elevando o nível de dificuldade.
-* **Lista de Palavras Curada:** Mais de 100 termos selecionados por ambiguidade para gerar debates intensos.
-* **Persistência de Dados:** Armazenamento local de configurações e palavras já utilizadas para evitar repetições.
-* **Interface Animada:** Uso de `Animated` API e `PanResponder` para uma experiência fluida de "arrastar para revelar".
+## Features
 
-## 🛠️ Tecnologias Utilizadas
+- **Blind mode:** optional setting that hides the hint from the impostor, raising the difficulty.
+- **Curated word list:** more than 100 words chosen for ambiguity, to spark discussion.
+- **Offline persistence:** settings and already used words stored locally to avoid repetition.
+- **Animated interface:** custom drag-to-reveal interaction built with the Animated API and PanResponder.
+- Interface in Portuguese.
 
-* **React Native / Expo** - Framework principal para desenvolvimento cross-platform.
-* **AsyncStorage** - Gerenciamento de persistência de dados locais.
-* **Lucide-react-native** - Biblioteca de ícones.
-* **React Navigation** - Gestão de rotas e fluxo entre telas.
+## Tech stack
 
-## 📦 Como Executar o Projeto
+| Concern | Technology |
+|---|---|
+| Framework | React Native, Expo |
+| Navigation | React Navigation |
+| Persistence | AsyncStorage |
+| Icons | lucide-react-native |
+| Builds | Expo Application Services (EAS) |
 
-1. Clone o repositório:
-    ```bash
-    git clone [https://github.com/luizgustavolab/impostor-game-android.git](https://github.com/luizgustavolab/impostor-game-android.git)
-    ```
+## Getting started
 
-2. Instale as dependências:
-    ```bash
-    npm install
-    ```
+```bash
+git clone https://github.com/luizgustavocs/impostor-game-android.git
+cd impostor-game-android
+npm install
+npx expo start
+```
 
-3. Inicie o servidor do Expo:
-    ```bash
-    npx expo start
-    ```
+Scan the QR code with the **Expo Go** app (Android or iOS).
 
-4. Escaneie o QR Code com o app **Expo Go** (Android/iOS).
+## Author
 
-## 📜 Histórico de Versões (Commits)
+Luiz Gustavo Costa e Silva · [GitHub](https://github.com/luizgustavocs) · [LinkedIn](https://www.linkedin.com/in/luizgustavocs)
 
-* `feat: initial commit with game logic, imposter hint toggle and refined word list` - Estrutura base, lógica de sorteio e lista de palavras ambíguas.
-* `docs: create project documentation` - Criação do README detalhado e guia de instalação.
-* `refactor: simplify word list and remove compound terms` - Refatoração da lista para palavras simples e únicas.
+<details>
+<summary>Versão em português</summary>
 
----
+### Impostor Game (Android)
 
-## 📄 Licença
+Jogo de dedução social em grupo, offline, feito com React Native e Expo. Todos recebem uma palavra secreta, menos o impostor, e o grupo precisa descobri-lo antes que ele adivinhe a palavra.
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+**Funcionalidades:** modo cego (sem dica para o impostor), lista com mais de 100 palavras ambíguas, persistência local com AsyncStorage para evitar repetições e interação de "arrastar para revelar" com Animated API e PanResponder.
 
-## ✉️ Contato
-
-Desenvolvido por **Luiz Gustavo**.  
-Conecte-se comigo:  
-[GitHub](https://github.com/luizgustavolab) 
-
-## 📲 Download (Beta Android)
-
-Você pode baixar e testar a versão atual do jogo diretamente no seu Android através do link abaixo:
-
-* [Baixar Impostor Game (APK)](https://expo.dev/artifacts/eas/tRBggDfp26t44Vu2Vfu5DF.apk)
-
-> **Nota:** Por ser um instalador independente (fora da Play Store), o Android pode exibir um aviso de "Fonte Desconhecida". Pode prosseguir com a instalação com segurança.
+**Como executar:** `npm install`, `npx expo start` e escanear o QR Code com o Expo Go. Também é possível instalar o [APK](https://expo.dev/artifacts/eas/tRBggDfp26t44Vu2Vfu5DF.apk) da versão beta.
+</details>
